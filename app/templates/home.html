@@ -1,9 +1,9 @@
- <section>
-  <div>
+<div class="room-nav">
+  
+   
+  <h1 class="title">Bloc Chat</h1>
 
-    <h1>Bloc Chat</h1>
-    
-    <p ng-repeat="room in main.chatrooms">{{ room.$value }}</p>
-    
+ <div ng-repeat="room in home.roomObject.all">
+   <h3>{{room.$value}}</h3>
+
   </div>
-</section>

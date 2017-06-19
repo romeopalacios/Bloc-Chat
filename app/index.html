@@ -1,29 +1,35 @@
 <!DOCTYPE html>
 <html ng-app="blocChat">
+
 <head lang="en">
-    <meta charset="UTF-8">
-    <title>Bloc Chat</title>
-    <link rel="stylesheet" href="/styles/main.css">
+  <meta charset="UTF-8">
+  <title>Bloc Chat</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="/styles/main.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
 </head>
+
 <body>
-    
-      <ui-view></ui-view>
-    
-       <!-- Angular -->
-     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script> 
-    
-      <!-- AngularUI Router -->
-     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.4.2/angular-ui-router.min.js"></script>
-    
-      <!-- FireBase -->
-     <script src="https://www.gstatic.com/firebasejs/4.1.2/firebase.js"></script>
-    
-      <!-- AngularFire -->
-     <script src="https://cdn.firebase.com/libs/angularfire/2.3.0/angularfire.min.js"></script>
-    
+  
+  <ui-view></ui-view>
+  
+
+  <!-- Angular -->
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
+  
+  <!-- jQuery -->
+  <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+
+  <!-- UI Router -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.4.2/angular-ui-router.min.js"></script>
+
+  <!-- Firebase -->
+  <script src="https://www.gstatic.com/firebasejs/3.6.8/firebase.js"></script>
+  
     <script>
-  // Initialize Firebase
-  var config = {
+    // Initialize Firebase
+ var config = {
     apiKey: "AIzaSyAVf3SP25QF_VJhxwOrWk69SXj5q1MptoM",
     authDomain: "bloc-chat-cea46.firebaseapp.com",
     databaseURL: "https://bloc-chat-cea46.firebaseio.com",
@@ -31,13 +37,18 @@
     storageBucket: "bloc-chat-cea46.appspot.com",
     messagingSenderId: "988862942224"
   };
-  firebase.initializeApp(config);
-   </script>
-    
-    
-      <!-- Application Files -->
-    <script src="/scripts/app.js"></script>
-    <script src="scripts/controllers/HomeCtrl.js"></script>
-    <script src="/scripts/services/Room.js"></script>
+    firebase.initializeApp(config);
+  </script>
+  
+  <!-- AngularFire -->
+  <script src="https://cdn.firebase.com/libs/angularfire/2.0.1/angularfire.min.js"></script>
+
+  <!-- Bootstrap -->
+  
+  
+  <script src="/scripts/app.js"></script>
+  <script src="/scripts/controllers/HomeCtrl.js"></script>
+  <script src="/scripts/services/Room.js"></script>
 </body>
+
 </html>
