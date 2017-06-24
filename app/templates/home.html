@@ -1,11 +1,18 @@
-<div class="room-nav">
-    <h1>Bloc Chat    <button type="button" class="btn btn-default" ng-click="home.open()">New room</button></h1>
-    
-         <div ng-repeat="room in home.roomObject.all">
-         <h3>{{room.$value}}</h3>
-         <h3>{{room.name}}</h3>
-       
-        </div>
-</div>
-<section class="right">
+<section class="left">
+    <h1>Bloc Chat  <button type="button" class="btn btn-default" ng-click="home.open()">New room</button></h1>
+    <ul>
+       <li ng-repeat="room in home.all">
+         <a ng-click="home.setRoom(room)"><h3>{{room.name}}</h3></a>
+       </li>
+      </ul>
+</section>
+<section class="right container">
+  <h1>{{ home.currentRoom.name}}</h1>
+  <div ng-repeat="message in home.messages" class="chat">
+    <p class="bold-capitalize">{{message.username}}</p>
+    <p>{{message.content}}</p>
+<section class="time">      
+    <small>{{message.sent_at | date:"MMM',' dd',' h:mma"}}</small>
+</section>      
+  </div>
 </section>
