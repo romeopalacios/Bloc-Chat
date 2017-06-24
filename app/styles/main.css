@@ -1,9 +1,51 @@
- .room-nav {
-   background-color: lightgray;
-   position: fixed;
-   width: 25%;
-   top: 0px;
-   left: 0px;
-   height: 100%;
+html {
+    height: 100%;
+    font-size: 100%;
 }
 
+body {
+
+  font-family: 'Open Sans';
+  min-height: 100%;
+  height: 100%;
+}
+
+.left, .right {
+  height: 100%;
+}
+section.left {
+  text-align: left;
+  float: left;
+  background-color: lightgray;
+  width: 25%;
+}
+
+section.right {
+  float: left;
+  background-color: #FFFFFF;
+  width: 75%;
+}
+
+section.right h1, section.left a h3  {
+  text-align: left;
+  text-transform: capitalize;
+}
+
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+.bold-capitalize {
+  font-weight: bold;
+  text-transform: capitalize;
+}
+
+.chat {
+  width: 100%;
+  padding: 15px;
+}
+section.time {
+    text-align: right;
+}
